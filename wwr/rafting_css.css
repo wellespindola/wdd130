@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004e89;
+    padding: 15px 30px;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  nav a.active,
+nav a:hover {
+  text-decoration: underline;
+  color: #cfcfb4; /* cor laranja viva para destaque */
+}
+
+
+
+  
+  .hero {
+    text-align: center;
+    background: #ccc url('https://images.pexels.com/photos/2250521/pexels-photo-2250521.jpeg?_gl=1*qfqvf9*_ga*MTA3NjAwNDMxNC4xNzUyNTI2NTY1*_ga_8JE65Q40S6*czE3NTI1MjY1NjQkbzEkZzEkdDE3NTI1Mjc5ODkkajEkbDAkaDA.') center/cover no-repeat;
+    padding: 200px 20px;
+  }
+  
+  .hero h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #b4cde4;
+    text-shadow: 1px 1px 2px #485968;
+
+  }
+  
+  .btn {
+    background-color: #264969;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+  }
+
+  .btn:hover {
+    color: #cfcfb4;
+  }
+
+  
+  .features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: white;
+  }
+  
+  .feature img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 6px;
+  }
+  
+  .newsletter-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #e0e0e0;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .newsletter-img {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .newsletter {
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    min-width: 250px;
+  }
+  
+  .newsletter h2 {
+    margin-bottom: 10px;
+  }
+  
+  .newsletter input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .newsletter button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer .social img {
+    margin: 0 8px;
+  }
+  
