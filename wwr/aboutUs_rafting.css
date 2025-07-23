@@ -1,4 +1,4 @@
-/* styles/rafting.css */
+
 
 :root {
     --primary-color: #264653;
@@ -26,20 +26,19 @@
   }
   
   
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #004e89;
-    padding: 15px 30px;
+ header {
+    background-color: #004466;
     color: white;
-  }
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 1rem;
+}
+
   
   .logo img {
     
-    width: 80px;
-    height: auto;
-    border-radius: 8px;
+    width: 150px;
   }
   
   nav ul {
@@ -57,7 +56,7 @@
   nav a.active,
 nav a:hover {
   text-decoration: underline;
-  color: #cfcfb4; /* cor laranja viva para destaque */
+  color: #cfcfb4; 
 }
   .hero {
     position: relative;
@@ -94,7 +93,7 @@ nav a:hover {
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 
-  padding: 32px; /* <-- Aumenta o espaçamento interno */
+  padding: 32px; 
   flex-wrap: nowrap;
   margin: 30px;
 }
@@ -109,13 +108,13 @@ nav a:hover {
     width: 150px;
     height: auto;
     border-radius: 8px;
-    flex-shrink: 0; /* impede que a imagem seja comprimida demais */
+    flex-shrink: 0; 
   }
   
   
-  /* HISTORY SECTION */
+
   .history {
-    margin: 40px 0;
+    margin: 40px ;
     text-align: center;
   }
   
@@ -144,7 +143,7 @@ nav a:hover {
     
   }
   
-  /* ADVENTURE SECTION */
+  
   .adventure {
     padding: 0 40px;
     margin: 40px 0;
@@ -157,8 +156,8 @@ nav a:hover {
     margin-bottom: 20px;
   }
   .adventure  img {
-    width: 150px;       /* ou 100% se estiver dentro de um container */
-    height: 250px;      /* ajuste conforme necessário */
+    width: 150px;       
+    height: 250px;      
     object-fit: cover;
     border-radius: 12px;
   }
@@ -166,7 +165,7 @@ nav a:hover {
   .gallery {
     display: flex;
     justify-content: space-between;
-    gap: 0 2.5rem; /* 0 em cima/baixo e 2.5rem nas laterais */
+    gap: 0 2.5rem; 
     
   }
   
@@ -207,4 +206,4 @@ nav a:hover {
     width:40px;
     height: 40px;
   }
-  
+   
