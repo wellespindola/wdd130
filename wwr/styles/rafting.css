@@ -60,7 +60,7 @@ nav a:hover {
 }
   .hero {
     position: relative;
-    background-image: url("imgwwr/pexels-tomfisk-1732280.jpg");
+    background-image: url("/wwr/images/pexels-tomfisk-1732280.jpg");
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -185,19 +185,27 @@ nav a:hover {
   }
   
   /* FOOTER */
-  footer {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-  }
   
-  footer p {
-    margin-bottom: 10px;
-  }
   
-  footer .socialmedia a {
+   footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+footer .social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+footer .socialmedia a {
     margin: 0 10px;
     display: inline-block;
   }
@@ -206,4 +214,8 @@ nav a:hover {
     width:40px;
     height: 40px;
   }
-   
+
+
+footer .social-icons img:hover {
+  transform: scale(1.1);
+}
