@@ -213,9 +213,173 @@ footer .socialmedia a {
   footer .socialmedia img {
     width:40px;
     height: 40px;
+    
   }
 
 
 footer .social-icons img:hover {
   transform: scale(1.1);
 }
+
+
+footer a {
+  color: white;          /* Preto */
+  text-decoration: none;
+}
+
+/* Css contact Us */
+
+
+
+
+.contact-container {
+  
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Seção de informações de contato */
+.contact-info {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+
+.map-container {
+  margin-top: 1rem;
+  max-width: 400px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Equipe */
+.equipe {
+  text-align: center;
+}
+
+.equipe img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.equipe figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+/* Formulário */
+.formulario-contato {
+  background-color: #f0f0f0;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.formulario-contato form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+}
+
+.formulario-contato input[type="radio"],
+.formulario-contato input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.formulario-contato button {
+  background-color: #1e90ff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-contato button:hover {
+  background-color: #0b65c2;
+}
+/* Layout lado a lado para contato */
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact-textos {
+  flex: 1;
+  min-width: 200px;
+}
+
+.map-container {
+  flex: 1;
+  max-width: 400px;
+  min-width: 250px;
+}
+
+/* Estilo para equipe em colunas */
+.team {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.team h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  max-width: 200px;
+}
+
+.team-member img {
+  width: 200px;        
+  height: 200px;        
+  object-fit: cover;    
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-member img:hover {
+  transform: scale(1.05);
+}
+
+.team-member p {
+  margin-top: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about our rafting company. Discover our story and what we offer.">
+  <meta name="author" content="Wellington Espindola">
+  <title>About Us - Rafting Adventure</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo"><img src="images/wellrafting.png" alt="Rafting Adventure Logo"></div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Trips</a></li>
+        <li><a href="#" class="active">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact-container">
+    <section class="contact-info">
+      <h1>Contact</h1>
+      <h2>Contact Information</h2>
+
+      <div class="contact-wrapper">
+        <div class="contact-textos">
+          <p>📍 Address: Rua das Águas, 123, Aventura - SP</p>
+          <p>📞 Phone: +55 (11) 99999-9999</p>
+          <p>📧 Email: contact@raftingadventure.com</p>
+        </div>
+
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=..." 
+            width="100%" 
+            height="200" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="team">
+      <h2>Our Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="images/instrutora nataly.webp" alt="Nathalie">
+          <p>Nathalie - Instructor</p>
+        </div>
+        <div class="team-member">
+          <img src="images/instrutorjoao.jpg" alt="John">
+          <p>John - Instructor</p>
+        </div>
+        <div class="team-member">
+          <img src="images/instrutorjorge.jpg" alt="Carlos">
+          <p>Carlos - Safety</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="formulario-contato">
+      <h2>Contact Form</h2>
+      <form>
+        <label for="nome">Name:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <p>Reason for Contact:</p>
+        <label><input type="radio" name="motivo" value="general"> General Inquiry</label>
+        <label><input type="radio" name="motivo" value="booking"> Booking Question</label>
+        <label><input type="radio" name="motivo" value="suggestion"> Website Suggestion</label>
+
+        <label for="mensagem">Message:</label>
+        <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+        <label><input type="checkbox" name="newsletter"> Please sign me up for the monthly newsletter</label>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 | Rafting Adventure | Wellington Espindola</p>
+    <a href="https://wireframe.cc/pro/ppp/c8fde7ab5-967332#ecee3219-4767-4104-aa9c-7a0966b46bc0">Wireframe</a>
+
+    <nav class="socialmedia">
+      <a href="#"><img src="images/facebookpng.PNG" alt="Facebook"></a>
+      <a href="#"><img src="images/xpng.PNG" alt="Twitter"></a>
+      <a href="#"><img src="images/instapng.PNG" alt="Instagram"></a>
+    </nav>
+  </footer>
+</body>
+
+</html>
