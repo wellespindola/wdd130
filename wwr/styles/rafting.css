@@ -26,20 +26,48 @@ header, main, footer {
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
+  text-align: center;
 }
 
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
+/* Header com CSS Grid conforme pedido nas instruções */
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 16px 0;
 }
 
-.socialmedia a {
+header .logo {
+  max-width: 100px;
+  height: auto;
+}
+
+/* Navegação com Flexbox */
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  gap: 15px;
+}
+
+header nav a {
   text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+  padding: 6px 12px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
 }
 
-/* Hero Section Overlay Styling */
+header nav a:hover {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+/* Hero Section Overlay */
 .hero {
   position: relative;
+  margin-bottom: 20px;
 }
 
 .hero img {
@@ -52,11 +80,10 @@ nav, p, section, article {
   position: absolute;
   top: 20px;
   width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.85;
+  padding: 12px;
   background-color: var(--accent1-color);
   color: #ffffff;
+  opacity: 0.85;
 }
 
 .hero article {
@@ -67,48 +94,73 @@ nav, p, section, article {
   background-color: rgba(233, 196, 106, 0.9);
   padding: 16px;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .hero article img {
-  float: right;
   width: 125px;
   height: auto;
-  margin-left: 12px;
   border: 2px solid var(--primary-color);
 }
-/* Alinhamento do Cabeçalho */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 0;
+
+/* Section History - Grid com 3 Colunas (Texto | Imagem | Texto) */
+.history {
+  margin: 30px 0;
 }
 
-header img {
-  max-width: 120px;
-  height: auto;
+.history h2 {
+  margin-bottom: 16px;
 }
 
-/* Formatação do Menu de Navegação */
-header nav ul {
-  display: flex;
-  list-style: none; /* Remove os pontos/bullets da lista */
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr 200px 1fr;
   gap: 20px;
-  margin: 0;
-  padding: 0;
+  align-items: center;
 }
 
-header nav a {
-  text-decoration: none; /* Remove o sublinhado */
-  color: var(--primary-color);
+.history-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Section Adventures - Grid de 5 Colunas na Horizontal */
+.adventures {
+  margin: 30px 0;
+}
+
+.adventures h2 {
+  margin-bottom: 16px;
+}
+
+.adventure-gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.adventure-gallery figure {
+  text-align: center;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.adventure-gallery figcaption {
+  font-size: 0.8rem;
   font-weight: bold;
+  margin-top: 6px;
+  color: var(--primary-color);
 }
 
-header nav a:hover {
-  color: var(--secondary-color);
-}
-
-/* Alinhamento do Rodapé e Redes Sociais */
+/* Rodapé */
 footer {
   margin-top: 30px;
   padding: 20px 0;
@@ -121,8 +173,6 @@ footer {
 .socialmedia {
   display: flex;
   gap: 12px;
-  margin: 0;
-  padding: 0;
 }
 
 .socialmedia a {
